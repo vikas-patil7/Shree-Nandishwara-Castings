@@ -1,0 +1,32 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="55%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="inset" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c9cace"/>
+    </linearGradient>
+  </defs>
+
+  <!-- hex bolt-head silhouette: nods to manufacturing/machining -->
+  <polygon points="100,12 23.8,56 23.8,144 100,188 176.2,144 176.2,56"
+           fill="url(#bg)" stroke="#60a5fa" stroke-width="3"/>
+
+  <!-- inset face for depth -->
+  <polygon points="100,32 42,66 42,134 100,168 158,134 158,66"
+           fill="url(#inset)" opacity="0.55"/>
+
+  <!-- machined shine accent -->
+  <path d="M42,66 L100,32 L100,50 L58,74 Z" fill="#ffffff" opacity="0.12"/>
+
+  <!-- monogram -->
+  <text x="100" y="128" font-family="Inter, Arial, sans-serif" font-weight="800"
+        font-size="72" text-anchor="middle" fill="url(#metal)" letter-spacing="-2">SN</text>
+</svg>
