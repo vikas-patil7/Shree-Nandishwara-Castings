@@ -48,7 +48,6 @@ const navItems = [
   { label: 'Services', href: '#services' },
   { label: 'Tool Room & Design', href: '#tool-room' },
   { label: 'Machinery', href: '#machinery' },
-  { label: 'Inspection Facilities', href: '#inspection' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -87,22 +86,6 @@ const machinery = [
     name: 'CNC Turning Machine (MORISEIKI)',
     details: ['Maximum Turning Length: 500mm', 'Maximum OD: 320mm', 'Bar Capacity (SPINDLE): 42mm'],
   },
-]
-
-const inspectionFacilities = [
-  
-
-  // Additional instruments from provided handwritten list
-  { description: 'Micrometers (0-400 mm)', range: '0-400 mm', qty: '13 Nos.' },
-  { description: 'Bore Gauge (10-250 mm)', range: '10-250 mm', qty: '8 Nos.' },
-  { description: 'Depth Vernier (0-300 mm)', range: '0-300 mm', qty: '2 Nos.' },
-  { description: 'Digital Vernier (0-300 mm)', range: '0-300 mm', qty: '5 Nos.' },
-  { description: 'Vernier caliper (0-600 mm)', range: '0-600 mm', qty: '01 No.' },
-  { description: 'Height Gauge (Digital) (0-300 mm)', range: '0-300 mm', qty: '01 No.' },
-  { description: 'Height Gauge (0-600 mm)', range: '0-600 mm', qty: '01 No.' },
-  { description: 'Slip Gauge (0.5-100 mm)', range: '0.5-100 mm', qty: '01 No.' },
-  { description: 'Digital Vernier (0-200 mm)', range: '0-200 mm', qty: '01 No.' },
-  { description: 'Surface Table', range: '-', qty: '02 Nos.' },
 ]
 
 const address = 'Survey no.109, Site No.07, Near Pipe Line Road, Keshava Industrial Area, Kachohalli Village, Off Magadi Main Road, Dasanpura Hobli, Bangalore North Taluk, Bangalore-560112'
@@ -257,34 +240,6 @@ function App() {
                   </ul>
                 </TiltCard>
               ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="section" id="inspection">
-          <div className="section-inner">
-            <p className="eyebrow">Inspection Facilities</p>
-            <h2>Precision Instruments</h2>
-            <p className="section-note">We have the following precision instruments of reputed make and inspection facilities at our end to ensure the components for its accuracies with calibration certification.</p>
-            <div className="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Description</th>
-                    <th>Range</th>
-                    <th>Qty</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {inspectionFacilities.map((item) => (
-                    <tr key={item.description}>
-                      <td>{item.description}</td>
-                      <td>{item.range || '-'}</td>
-                      <td>{item.qty}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
             </div>
           </div>
         </section>
